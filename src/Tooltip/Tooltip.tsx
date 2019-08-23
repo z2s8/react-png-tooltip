@@ -1,5 +1,5 @@
 import * as React from 'react'
-const { useRef, useMemo, useEffect } = React
+const { useRef, useEffect } = React
 import { EMountHandlers, EQuarters } from './enums'
 // Worker function
 import { isMobile as setisMobile } from './is-mobile'
