@@ -430,7 +430,6 @@ const tooltip = (props: ITooltipProps) => {
     /**
      * Optimization, only update virtual DOM if there is a change in bIsHidden or bIsNotHovered.
      */
-    useMemo(() => (
       <span
         /**
         * DO NOT REMOVE THE INITIAL OVERFLOW: HIDDEN.
@@ -459,7 +458,6 @@ const tooltip = (props: ITooltipProps) => {
           </Content>)
           : null}
       </span>
-    ), [state.bIsHidden, state.bIsNotHovered])
   )
 }
 
